@@ -35,15 +35,15 @@ const RegistrationForm: React.FC = () => {
             <form onSubmit={handleSubmit}>
                 <div>
                     <div><label>First Name : </label></div>
-                    <div><input type="text" id='fname' name='fname' value={firstName} onChange={(e) => setFirstName(e.target.value)} />
+                    <div><input required type="text" id='fname' name='fname' value={firstName} onChange={(e) => setFirstName(e.target.value)} />
                     </div></div>
                 <div>
                     <label>Last Name : </label>
-                    <input type="text" name='lname' value={lastName} onChange={(e) => setLastName(e.target.value)} />
+                    <input required type="text" name='lname' value={lastName} onChange={(e) => setLastName(e.target.value)} />
                 </div>
                 <div>
                     <label>Email : </label>
-                    <input type="text" name='email' value={email} onChange={(e) => setEmail(e.target.value)} />
+                    <input required type="text" name='email' value={email} onChange={(e) => setEmail(e.target.value)} />
                 </div>
                 <button type='submit'>Submit</button>
             </form>

@@ -6,10 +6,14 @@ import DisplayValues from './components/DisplayValues';
 
 function App() {
   return (
-    <div className="App">
+    <div className="container">
       <RegistrationContextProvider>
-        <RegistrationForm />
-        <DisplayValues />
+        <div className="form-selection">
+          <RegistrationForm />
+        </div>
+        <div className="display-selection">
+          <DisplayValues />
+        </div>
       </RegistrationContextProvider>
     </div>
   );

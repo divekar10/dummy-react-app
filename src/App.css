@@ -1,38 +1,51 @@
-.App {
+.container {
+  display: flex;
+  flex-direction: row; /* Aligns items horizontally */
+  gap: 20px; /* Adds space between the sections */
+  justify-content:space-evenly;
+}
+
+.form-section, .display-section {
+  flex: 1; /* Ensures each section takes up equal width */
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.form-section {
+  background-color: #f2f2f2;
+}
+
+/* .display-section {
+  background-color: #e6e6e6;
+} */
+
+.display-section {
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+  padding: 20px;
+  max-width: 500px;
+  margin: auto;
+  font-family: Arial, sans-serif;
+}
+
+.display-section h2 {
+  color: #4a90e2;
+  font-size: 1.5em;
+  margin-bottom: 15px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.display-section p {
+  font-size: 1em;
+  color: #333;
+  line-height: 1.6;
+  padding: 10px 0;
+  border-bottom: 1px solid #eee;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.display-section p:last-child {
+  border-bottom: none;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}

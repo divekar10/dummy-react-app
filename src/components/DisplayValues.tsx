@@ -8,9 +8,9 @@ const DisplayValues: React.FC = () => {
   return (
     <div>
         <h2>Form Values </h2>
-    <label> First Name : {registrationContext?.formValues?.firstName}</label><br/>
-    <label> Last Name : {registrationContext?.formValues?.lastName}</label><br />
-    <label> Email : {registrationContext?.formValues?.email}</label>
+    <p> First Name : {registrationContext?.formValues?.firstName}</p><br/>
+    <p> Last Name : {registrationContext?.formValues?.lastName}</p><br />
+    <p> Email : {registrationContext?.formValues?.email}</p>
     </div>
   )
 }
