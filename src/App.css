@@ -1,9 +1,16 @@
-.container {
+/*.container {
   display: flex;
-  flex-direction: row; /* Aligns items horizontally */
-  gap: 20px; /* Adds space between the sections */
+  flex-direction: row; /* Aligns items horizontally 
+  gap: 20px; /* Adds space between the sections 
   justify-content:space-evenly;
+}*/
+
+.container{
+  display: flex;
+  flex-direction: row;
 }
+
+
 
 .form-section, .display-section {
   flex: 1; /* Ensures each section takes up equal width */
